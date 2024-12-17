@@ -1,0 +1,104 @@
+<div class="content">
+
+    <section class="parallax-section dashboard-header-sec gradient-bg" data-scrollax-parent="true">
+        <div class="container">
+            <div class="dashboard-breadcrumbs breadcrumbs">
+                <a><i class='far fa-home breadcrumb-home'></i></a><a
+                    >حساب من</a><span>آگهی های من</span>
+            </div>
+            <!--Tariff Plan menu-->
+            <div class="dashboard-edit-profile hidden-xs">
+                <button type="button" id="dashboard-logout" class="add_new-dashboard" style="display: flex; align-items: center; gap: 8px;">
+                    <span>خروج</span>
+                    <i class="fal fa-sign-out"></i>
+                </button>
+            </div>
+
+            <!--Tariff Plan menu end-->
+            <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
+                <h1>خوش آمدید : <span id="dashboard-user">کاربر ناشناس</span></h1>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="dashboard-header fl-wrap">
+            <div class="container">
+                <div class="dashboard-header_conatiner fl-wrap">
+                    <div class="dashboard-header-avatar">
+                        <img src="assets/images/default-user.jpg" alt="user avatar">
+                        <a class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
+                    </div>
+                    <div class="dashboard-header-stats-wrap">
+                        <div class="dashboard-header-stats">
+                            <div class="swiper-container" dir="rtl">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="dashboard-header-stats-item">
+                                            <i class="fal fa-map-marked"></i>
+                                            تعداد آگهی ها <span id="dashboard-ads-count">0</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bg-figure" style="right:-30px;top:10px;"></div>
+        <div class="gradient-bg-figure" style="left:-20px;bottom:30px;"></div>
+        <div class="circle-wrap" style="left:120px;bottom:120px;" data-scrollax="properties: { translateY: '-200px' }">
+            <div class="circle_bg-bal circle_bg-bal_small"></div>
+        </div>
+        <div class="circle-wrap" style="right:420px;bottom:-70px;" data-scrollax="properties: { translateY: '150px' }">
+            <div class="circle_bg-bal circle_bg-bal_big"></div>
+        </div>
+        <div class="circle-wrap" style="left:420px;top:-70px;" data-scrollax="properties: { translateY: '100px' }">
+            <div class="circle_bg-bal circle_bg-bal_big"></div>
+        </div>
+        <div class="circle-wrap" style="left:40%;bottom:-70px;">
+            <div class="circle_bg-bal circle_bg-bal_middle"></div>
+        </div>
+        <div class="circle-wrap" style="right:40%;top:-10px;">
+            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }">
+            </div>
+        </div>
+        <div class="circle-wrap" style="right:55%;top:90px;">
+            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }">
+            </div>
+        </div>
+    </section>
+    <section class="gray-bg main-dashboard-sec" id="sec1">
+        <div class="container">
+
+            
+
+            <div class="col-md-12">
+
+                <div class="dashboard-title fl-wrap">
+                    <h3>آگهی های من</h3>
+                </div>
+
+                <div class="dashboard-list-box fl-wrap">
+
+                    <div id="dashboard-list" class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid four">
+                        
+                    </div>
+
+                    <div class="no-result rtl" id="no-result">
+                        <img src="assets/images/no-result.png" alt="no-result">
+                        <h4>هنوز آگهی ثبت نکردی!</h4>
+                        <a href="/submit" class="add-list color-bg" style="float: none; padding: 8px 20px; font-size: 18px;">
+                            &nbsp; ثبت آگهی جدید <span><i class="fal fa-layer-plus"></i></span>
+                        </a>
+                   </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="limit-box fl-wrap"></div>
+</div>

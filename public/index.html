@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>همه آگهی ها در ایران | عنوان سایت شما</title>
+
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+
+  <body>
+    <div
+      id="loading"
+      class="with-sticky"
+      aria-busy="false"
+      aria-label="در حال فراخوانی ... لطفا منتظر بمانید"
+      role="progressbar"
+    ></div>
+
+    <div id="main" class="sticky-header" style="opacity: 1">
+      <header class="main-header" id="appvue">
+        <a href="/home" class="logo-holder"
+          ><img src="assets/images/laraplus-logo.svg" alt="laraplus logo"
+        /></a>
+
+        <a href="/submit" class="add-list color-bg">
+          &nbsp; ثبت آگهی رایگان <span><i class="fal fa-layer-plus"></i></span>
+        </a>
+
+        <div id="top-menu-account">
+          <div
+            id="header-auth-link"
+            class="show-reg-form top-auth-button avatar-img"
+            data-srcav="images/avatar/3.jpg"
+          >
+            <a href="/login"
+              ><i class="fal fa-user-circle"></i>ورود / ثبت نام</a
+            >
+          </div>
+          <div id="header-logged" class="header-user-menu hidden">
+            <a href="/dashboard" class="header-user-name">
+              <span><img src="assets/images/default-user.jpg" alt="" /></span>
+              حساب من
+            </a>
+          </div>
+        </div>
+
+        <!-- nav-button-wrap end-->
+        <!--  navigation -->
+        <div class="nav-holder main-menu">
+          <nav>
+            <ul class="no-list-style" id="main-menu">
+              <li>
+                <a href="/home" target="_self"
+                  ><i class="fa fa-home"></i> خانه</a
+                >
+              </li>
+              <li>
+                <a target="_self"><i class="fa fa-star"></i> تعرفه آگهی ها</a>
+              </li>
+              <li>
+                <a target="_self"><i class="fa fa-bullhorn"></i> خبرهای سایت</a>
+              </li>
+              <li>
+                <a href="/call" target="_self"
+                  ><i class="fa fa-envelope"></i> تماس با ما</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div id="wrapper">
+        <div id="app"></div>
+      </div>
+
+      <footer class="main-footer fl-wrap">
+        <!--sub-footer-->
+        <div class="sub-footer fl-wrap">
+          <div class="container">
+            <div class="copyright">
+              آگهی نامه لاراپلاس - پروژه
+              <a
+                href="https://laraplus.ir/course/javascript-mastery-from-zero-to-hero"
+                >دوره آموزش جامع جاوااسکریپت
+              </a>
+              Laraplus.ir<br />
+              طراحی و توسعه توسط<a href="http://laraplus.ir" target="_blank">
+                لاراپلاس</a
+              >
+              - سیروان منفرد
+            </div>
+
+            <div class="subfooter-nav subfooter-socials">
+              <ul class="no-list-style">
+                <li>
+                  <a title="Facebook" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="Twitter" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="GooglePlus" target="_blank"
+                    ><i class="fab fa-google-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="Instagram" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="LinkedIn" target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="Pinterest" target="_blank"
+                    ><i class="fab fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="Telegram" target="_blank"
+                    ><i class="fa fa-paper-plane"></i
+                  ></a>
+                </li>
+                <li>
+                  <a title="RSS خوراک " target="_blank"
+                    ><i class="fa fa-rss"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <template id="ad-template">
+      <div class="listing-item">
+        <div class="item-ribbon hidden"><span>غیرفعال</span></div>
+        <article class="geodir-category-listing fl-wrap">
+          <div class="geodir-category-img">
+            <a
+              href="/single"
+              data-item-id=""
+              class="geodir-category-img-wrap fl-wrap"
+            >
+              <img class="item-image" src="" alt="" />
+            </a>
+            <div class="geodir-category-opt">
+              <div class="listing-rating"></div>
+              <div class="listing-date">2 سال پیش</div>
+            </div>
+          </div>
+          <div class="geodir-category-content fl-wrap title-sin_item">
+            <div class="geodir-category-content-title fl-wrap">
+              <div class="geodir-category-content-title-item">
+                <h2>
+                  <a href="/single" class="item-title" data-item-id=""
+                    >عنوان آگهی</a
+                  >
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="geodir-category-footer fl-wrap"
+              style="
+                direction: rtl;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <div class="item-info-wrapper">
+                  <div class="item-category">دسته بندی آگهی</div>
+                </div>
+                <div class="geodir-category-location fl-wrap item-location">
+                  موقعیت آگهی
+                </div>
+              </div>
+              <div class="booking-list-contr">
+                <button
+                  class="red-bg tolt hidden item-delete"
+                  data-microtip-position="right"
+                  data-tooltip="حذف"
+                >
+                  <i class="fal fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

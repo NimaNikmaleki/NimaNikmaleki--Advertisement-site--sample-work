@@ -1,0 +1,120 @@
+<div class="content">
+
+    <!--  section  end-->
+    <section class="gray-bg small-padding">
+        <div class="container">
+
+            <div class="breadcrumbs inline-breadcrumbs fl-wrap block-breadcrumbs">
+                <a href="/home"><i class='far fa-home breadcrumb-home'></i></a>
+                <span>ثبت آگهی</span>
+            </div>
+
+
+            <div class="form-message-placeholder colorful"></div>
+
+            <div id="form-wrapper">
+                <form method="POST" id="submit-form" class="darker-form submit-form">
+
+                    <div class="col-md-7 col-xs-12 pr-0 sm-p0">
+                        <div class="fl-wrap block_box p-20">
+                            <div class="col-sm-12 form-div p-0">
+                                <div class="form-group form-group--float form-group-static form-group--icon">
+                                    <input type="text" id="title" data-title="عنوان آگهی" name="title" class="form-control" value="">
+                                    <span class="input-icon-addon top-3"> <i class="fa fa-edit"></i> </span>
+                                    <label for="title">عنوان آگهی</label>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 form-div pr-0">
+                                <div class="form-group select-group--float form-group--float form-group--icon">
+                                    <label for="category">گروه آگهی </label>
+                                    <span class="input-icon-addon top-3"> <i class="fa fa-trophy"></i> </span>
+                                    <select name="category" id="category" data-title="گروه آگهی" class="form-control">
+                                        <option value="any" disabled selected style="display: none;">انتخاب کنید
+                                        </option>
+                                    </select>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-xs-12 form-div pr-0">
+                                <div class="form-group select-group--float form-group--float form-group--icon">
+                                    <label for="location">موقعیت آگهی</label>
+                                    <span class="input-icon-addon top-3"> <i class="fa fa-location"></i> </span>
+                                    <select name="location" id="location" data-title="موقعیت آگهی" class="form-control">
+                                        <option value="any" disabled selected style="display: none;">انتخاب کنید
+                                        </option>
+                                    </select>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div id="custom-fields-wrapper">
+                                <div class="row custom-fields-placeholder">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="col-sm-6 col-xs-12 form-div pr-0 sm-p0">
+                                    <div class="form-group form-group--float form-group-static form-group--icon has-checkbox-addon">
+                                        <input type="text" id="price" data-title="قیمت" name="price"
+                                            class="form-control ltr digits-field" value="">
+                                        <span class="input-icon-addon"><i class="fa fa-sack-dollar"></i> </span>
+                                        <label for="price"> &nbsp;قیمت ( تومان)</label>
+                                        <div class='digits-divider'></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-12 form-div pr-0 sm-p0" id="link-placeholder">
+                                    <div class="form-group form-group--float form-group-static form-group--icon">
+                                        <input type="text" id="link" data-title="آدرس سایت" name="link" class="form-control ltr" value="">
+                                        <span class="input-icon-addon top-3"> <i class="fa fa-external-link"></i> </span>
+                                        <label for="link">آدرس سایت</label>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 form-div p-0">
+                                <div class="form-group form-group--float form-group-static form-group--icon">
+                                    <textarea name="description" id="description" data-title="توضیحات"
+                                        class="form-control medium"></textarea>
+                                    <span class="input-icon-addon top-3"> <i class="fa fa-edit"></i> </span>
+                                    <label for="description">توضیحات</label>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-xs-12 p-0" id="add-item-upload-images-part">
+                        
+                        <div class="fl-wrap block_box p-20 mb-20" id="uploader-part">
+                            <div class="block_box__header">
+                                <h2>انتخاب عکس مناسب می تواند میزان بازدید از آگهی شما را چندین برابر افزایش دهد</h2>
+                            </div>
+
+                            <div>
+
+                                <figure class='hover-wrapper'>
+                                    <input type="file" class="hidden-file-input" id="uploader" name="image" accept=".jpg, .jpeg, .png">
+                                    
+                                    <div class='drop-images' data-click-starts-choose-file>
+                                        <div data-image-placeholder class="uploader-preview-placeholder"></div>
+                                        <span class='hover-icon'><i class='fa fa-plus'></i><br />افزودن عکس</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <button type="submit" id="submit-button" class="btn color2-bg float-btn no-shadow submit-button" name="submit_item">ثبت آگهی <i class='fal fa-angle-left'></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="limit-box fl-wrap"></div>
+</div>

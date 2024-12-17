@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack serve"
+  },
+  "devDependencies": {
+    "leaflet": "^1.9.4",
+    "toastify-js": "^1.12.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}

@@ -1,0 +1,116 @@
+<div class="content">
+
+    <!--  section  end-->
+    <section class="gray-bg small-padding" id="sec1">
+        <div class="container">
+
+
+                <div class="listsearch-input-wrap fl-wrap tabs-act inline-lsiw" id="lisfw">
+                    <form method="GET" id="filter-form">
+
+                        <div class="card no-radius minimal fl-wrap">
+                            <div class="row list-search">
+
+                                <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                                    <div class="form-group form-group--float form-group--icon form-group--active no-left-radius">
+                                        <input type="text" id="keyword" name="keyword" class="form-control">
+                                        <span class="input-icon-addon top-3"> <i class="fa fa-edit"></i></span>
+                                        <label for="keyword">جستجو ...</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0" id="category-dynamic-select">
+
+                                    <div class="form-group select-group--float form-group--float form-group--icon form-group--active no-radius">
+                                        <label for="category">گروه آگهی </label>
+                                        <span class="input-icon-addon top-3"> <i class="fa fa-trophy"></i> </span>
+                                        <select name="category" id="category" data-title="گروه آگهی" class="form-control">
+                                            <option value="">همه گروه ها 
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0" id="location-dynamic-select">
+                                    <div class="form-group select-group--float form-group--float form-group--icon form-group--active no-radius">
+                                        <label for="location">موقعیت آگهی</label>
+                                        <span class="input-icon-addon top-3"> <i class="fa fa-location"></i> </span>
+                                        <select name="location" id="location" data-title="موقعیت آگهی" class="form-control">
+                                            <option value="">همه ایران 
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-2 text-left col-md-2 col-sm-12 p-0 pos-inherit">
+                                    <button class="search-button color2-bg" id="filter-form-submit"><i class="far fa-search"></i> جستجو </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-xs-12">
+                    <div
+                        class="list-main-wrap-header fl-wrap block_box no-vis-shadow no-bg-header fixed-listing-header">
+                        <div class="list-main-wrap-title">
+                            <div class="breadcrumbs inline-breadcrumbs minimal fl-wrap">
+                                <a href="/home"><i
+                                        class='far fa-home breadcrumb-home'></i></a><a
+                                    >همه ایران</a>
+                            </div>
+                        </div>
+
+                        <div class="list-main-wrap-opt">
+                            <div class="grid-opt">
+                                <ul class="no-list-style hidden-md">
+                                    <li class="grid-opt_act grid-selector" data-type="grid"  id = 'right-grid'><span
+                                            class="two-col-grid act-grid-opt tolt medium"
+                                            data-microtip-position="bottom" data-tooltip="نمای شبکه ای"><i
+                                                class="fal fa-th"></i></span></li>
+                                    <li class="grid-opt_act grid-selector" data-type="list" id = 'left-grid'><span class="one-col-grid tolt medium"
+                                            data-microtip-position="bottom" data-tooltip="نمای لیستی"><i
+                                                class="fal fa-list"></i></span></li>
+                                </ul>
+                            </div>
+
+                            <div class="price-opt">
+                                <div class="listsearch-input-item">
+                                    <select name="or" class="sort-select" id="sort-select">
+                                        <option value="default">پیش فرض</option>
+                                        <option value="latest">جدیدترین</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="custom-scroll-link back-to-filters clbtg" href="#lisfw"><i
+                                class="fal fa-search"></i></a>
+                    </div>
+                    <div class="gray-section-title">
+                        <h2>همه آگهی ها در ایران</h2>
+                    </div>
+
+                    <!-- Ads List Goes Here -->
+                    <div id="home-list" class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid four">
+                        
+                    </div>
+
+                    <div class="no-result hidden" id="no-result">
+                        <img src="assets/images/no-result.png" alt="no-result">
+                        <h4>متاسفانه نتیجه ای یافت نشد</h4>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="limit-box fl-wrap"></div>
+
+
+</div>
