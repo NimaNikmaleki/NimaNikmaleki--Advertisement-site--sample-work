@@ -4,17 +4,16 @@ export class Ad {
       this[key] = item[key];
     }
 
-    this.createdAT = new Date(this.created_at).toLocaleDateString('fa-IR', {
+    this.createdAt = new Date(this.created_at).toLocaleDateString('fa-IR', {
       year: 'numeric',
       month: '2-digit',
       day: 'numeric',
     });
-    this.updatedAT = new Date(this.updated_at).toLocaleDateString('fa-IR', {
+    this.updatedAt = new Date(this.updated_at).toLocaleDateString('fa-IR', {
       year: 'numeric',
       month: '2-digit',
       day: 'numeric',
     });
-
     this.templateElm = document.getElementById('ad-template');
   }
 
